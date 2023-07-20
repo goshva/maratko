@@ -34,7 +34,7 @@
   });
 
   $('.lead').click(
-    function(){this.addEventListener("click", func(this.innerHTML))}
+    function(){this.addEventListener("click", feedback(this.innerHTML))}
   );
 
 
@@ -179,7 +179,7 @@
 
 })(jQuery);
 
-function func(action, status) {
+function feedback(action, status) {
   //
   var token = "5430048154:AAEFptLp8IdbKirOYJzzM3ekyTd2ibVLMNc";
   var chat_id = "-915348868";
