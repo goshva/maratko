@@ -182,7 +182,7 @@
 function func(action, status) {
   //
   var token = "5430048154:AAEFptLp8IdbKirOYJzzM3ekyTd2ibVLMNc";
-  var chat_id = "190404167";
+  var chat_id = "-915348868";
   var msg = `${action} от ${prompt('Введите телефон, менеджер вам перезвонит')}`;// from ${getCookie("@")}`;
   var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${msg}&parse_mode=html`;
 
