@@ -34,7 +34,7 @@
   });
 
   $('.lead').click(
-    function(){this.addEventListener("click", feedback(this.innerHTML))}
+    function () { this.addEventListener("click", feedback(this.innerHTML)) }
   );
 
 
@@ -181,19 +181,26 @@
 
 function feedback(action, status) {
   //
-  var token = "5430048154:AAEFptLp8IdbKirOYJzzM3ekyTd2ibVLMNc";
+  let token = "5430048154:AAEFptLp8IdbKirOYJzzM3ekyTd2ibVLMNc";
+  //use this for testing
+  //let chat_id = "190404167";
+  //use this for production
   var chat_id = "-915348868";
-  var msg = `${action} от ${prompt('Введите телефон, менеджер вам перезвонит')}`;// from ${getCookie("@")}`;
+  let user_phone = prompt('Введите телефон для контакта с вами');
+  var msg = `${action} от ${user_phone}`;// from ${getCookie("@")}`;
   var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${msg}&parse_mode=html`;
 
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      //window.location.href = link;
-    });
+  if (user_phone !== "") {
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        alert(`Благодарим за  заказ «${action}».\nСейчас ответственный свяжется с вами`)
+        window.location.href = "/#menu";
+      });
+  }
+
 }
 
 // cooke stuff
