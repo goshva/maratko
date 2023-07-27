@@ -183,7 +183,8 @@ function feedback(action, status) {
   //
   let token = "5430048154:AAEFptLp8IdbKirOYJzzM3ekyTd2ibVLMNc";
   //use this for testing
-  let chat_id = "190404167";
+  //let chat_id = "190404167";
+  //let chat_id = "1329475336";//Aram ID
   //use this for production
   var chat_id = "-915348868";
   let user_phone = prompt('Введите телефон для контакта с вами');
