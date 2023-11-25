@@ -1,694 +1,504 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>Прокат Авто</title>
-<meta charset="utf-8">
+
+<head>
+  <title>Прокат Авто без водителя</title>
+  <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Montserrat:400,700"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Montserrat:400,700" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
 
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-4 site-logo" data-aos="fade">
-            <a href="index.html"><em>MaratGo</em></a>
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 site-logo" data-aos="fade">
+          <a href="index.html"><em>MaratGo</em></a>
+        </div>
+        <div class="col-8">
+          <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="col-8">
-            <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <!-- END menu-toggle -->
+          <!-- END menu-toggle -->
 
-            <div class="site-navbar js-site-navbar">
-              <nav role="navigation">
-                <div class="container">
-                  <div class="row full-height align-items-center">
-                    <div class="col-md-6">
-                      <ul class="list-unstyled menu">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="hotel.html">Жилье</a></li>
+          <div class="site-navbar js-site-navbar">
+            <nav role="navigation">
+              <div class="container">
+                <div class="row full-height align-items-center">
+                  <div class="col-md-6">
+                    <ul class="list-unstyled menu">
+                      <li><a href="index.html">Главная</a></li>
+                      <li><a href="hotel.html">Жилье</a></li>
                       <li><a href="package.html">Путешествие под ключ</a></li>
                       <li><a href="route.html">Поездки по маршрутам</a></li>
-                        <li><a href="about.html">О нас</a></li>
-                        <li><a href="blog.html">Блог</a></li>
-                        <li><a href="contact.html">Контакты</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6 extra-info">
-                      <div class="row">
-                        <div class="col-md-6 mb-5">
-                          <h3>Контакты</h3>
-                          <p>
-                            Чайковского 26а <br />
-                            Кисловодск
-                          </p>
-                          <p>Markod009@mail.ru</p>
-                          <p>+7 (938) 300-09-06</p>
-                        </div>
-                        <div class="col-md-6">
-                          <h3>Мы на связи</h3>
-                          <ul class="list-unstyled">
+                      <li><a href="about.html">О нас</a></li>
+                      <li><a href="blog.html">Блог</a></li>
+                      <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 extra-info">
+                    <div class="row">
+                      <div class="col-md-6 mb-5">
+                        <h3>Контакты</h3>
+                        <p>
+                          Чайковского 26а <br />
+                          Кисловодск
+                        </p>
+                        <p>Markod009@mail.ru</p>
+                        <p>+7 (938) 300-09-06</p>
+                      </div>
+                      <div class="col-md-6">
+                        <h3>Мы на связи</h3>
+                        <ul class="list-unstyled">
                           <li><a href="https://vk.com/id809465584">VK</a></li>
                           <li><a href="#">OK</a></li>
                           <li><a href="https://youtube.com/@maratkodzhakov">VK</a></li>
-                          </ul>
-                        </div>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-              </nav>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END head -->
+
+  <section class="site-hero overlay page-inside" style="background-image: url(img/rental_1.jpg)">
+    <div class="container">
+      <div class="row site-hero-inner justify-content-center align-items-center">
+        <div class="col-md-10 text-center">
+          <h1 class="heading" data-aos="fade-up">Прокат Авто без водителя</h1>
+          <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
+            Люби и катайся
+          </p>
+        </div>
+      </div>
+      <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="bg-light">
+    <div class="half d-md-flex d-block">
+      <div class="image" data-aos="fade" style="background-image: url('img/rental_1.jpg')"></div>
+      <div class="text" data-aos="fade-right" data-aos-delay="200">
+        <h2> Прокат авто 
+        </h2>
+
+        <p>
+          Аренда авто без водителя у нас - это еще и выгодное предложение. Мы предлагаем конкурентные цены и гибкую
+          систему скидок. Забудьте о необходимости скачивать приложения такси и ждать в очереди. С нами, вы сможете
+          самостоятельно выбрать маршрут, остановиться в любом месте и наслаждаться своим путешествием без ограничений.
+          Мы гарантируем вам безупречное состояние автомобилей, своевременную доставку и профессиональное обслуживание.
+          Возьмите руль в свои руки и ощутите свободу передвижения с арендой авто без водителя от нашей компании уже
+          сегодня!
+        </p>
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать авто</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="half d-md-flex d-block">
+      <div class="image order-2" data-aos="fade" style="background-image: url('img/rental_1.jpg')"></div>
+      <div class="text" data-aos="fade-left" data-aos-delay="200">
+        <h2> Преимущевства 
+        </h2>
+        <p>
+
+          Аренда автомобиля на Кавказе предлагает ряд преимуществ, включая:</p>
+
+          <p>1. Свобода передвижения: Вы сами выбираете пункты назначения, маршруты и время переезда. Вы можете исследовать
+          горы, озера, красивые долины и другие природные достопримечательности Кавказа в собственном темпе.</p>
+
+          <p>2. Гибкость: Аренда автомобиля позволяет вам остановиться и провести время в самых интересных и красивых
+          местах. Вы можете остановиться на обзорных площадках, посетить национальные парки, попробовать местную кухню и
+          т.д.</p>
+
+          <p>3. Удобство: У вас есть возможность путешествовать семьей или группой друзей. Вы можете выбрать автомобиль,
+          отвечающий вашим потребностям и предпочтениям и иметь достаточно места для комфортной поездки.</p>
+
+          <p>4. Экономическая выгода: В долгосрочной перспективе аренда автомобиля может быть более выгодной по сравнению с
+          использованием других общественных средств передвижения или туристических экскурсий. Вы сможете сэкономить на
+          стоимости транспорта и оплачивать только за фактическое использование автомобиля.</p>
+
+          <p>5. Удобство для путешествия: Большинство агентств по аренде автомобилей предлагают широкий выбор автомобилей
+          различных классов и моделей. Вы можете выбрать автомобиль с автоматической коробкой передач, навигационной
+          системой и другими дополнительными удобствами, что значительно облегчит ваше путешествие.</p>
+
+          <p>6. Надежность и безопасность: Ведущие агентства по аренде автомобилей предлагают хорошо обслуживаемые
+          автомобили с регулярной технической проверкой. Это дает вам уверенность в надежности и безопасности вашего
+          транспорта во время путешествия.</p>
+        </p>
+
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать авто</a>
+        </p>
+      </div>
+    </div>
+    <div class="half d-md-flex d-block">
+      <div class="image" data-aos="fade" style="background-image: url('img/rental_1.jpg')"></div>
+      <div class="text" data-aos="fade-right" data-aos-delay="200">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+          aliquid, est reiciendis repellat sapiente consequatur aperiam,
+          ducimus, id minima eligendi officiis, qui expedita sint culpa illum
+          magnam ipsam adipisci possimus? Sit aspernatur eaque id sunt fuga
+          facere hic laudantium, aperiam!
+        </p>
+
+
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать авто</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="half d-md-flex d-block">
+      <div class="image order-2" data-aos="fade" style="background-image: url('img/rental_1.jpg')"></div>
+      <div class="text" data-aos="fade-left" data-aos-delay="200">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+          aliquid, est reiciendis repellat sapiente consequatur aperiam,
+          ducimus, id minima eligendi officiis, qui expedita sint culpa illum
+          magnam ipsam adipisci possimus? Sit aspernatur eaque id sunt fuga
+          facere hic laudantium, aperiam!
+        </p>
+
+
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать авто </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="section slider-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="slider-item">
+              <img src="img/slider-1.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/slider-2.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/slider-3.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/slider-4.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/slider-5.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/slider-6.jpg" alt="Image placeholder" class="img-fluid" />
             </div>
           </div>
+          <!-- END slider -->
         </div>
       </div>
-    </header>
-    <!-- END head -->
+    </div>
+  </section>
+  <!-- END section -->
+  <section class="bg-light">
+    <div class="half d-md-flex d-block">
+      <div class="image" data-aos="fade" style="background-image: url('img/rent_10.jpg')"></div>
+      <div class="text" data-aos="fade-right" data-aos-delay="200">
+        <h2> Центр Города
+        </h2>
 
-    <section
-      class="site-hero overlay page-inside"
-      style="background-image: url(img/rental_1.jpg)"
-    >
-      <div class="container">
-        <div
-          class="row site-hero-inner justify-content-center align-items-center"
-        >
-          <div class="col-md-10 text-center">
-            <h1 class="heading" data-aos="fade-up">Прокат авто</h1>
-            <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
-              Люби и катайся
-            </p>
-          </div>
-        </div>
-        <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
+        <p>
+          Доброго дня ,уважаемые гости ,мы предлагаем Квартиру в самом центре города , трех комнатная , с новым
+          ремонтом,находится в 1-ой парковой зоне в самом центре города курорта Кисловодск. Сдается от 3 суток ,
+          вместительность до 7 -ми гостей ,
+        </p>
+        <p>
+          Возле нашего дома имеется пекарня ,каждый день горячая выпечка ,рядом продуктовые магазины ,до центрального
+          городского рынка 5 минут,до поющего фонтана в центре парка идти всего лишь 3 минуты.
+        </p>
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать авто </a>
+        </p>
       </div>
-    </section>
-    <!-- END section -->
+    </div>
 
-    <section class="bg-light">
-      <div class="half d-md-flex d-block">
-        <div
-          class="image"
-          data-aos="fade"
-          style="background-image: url('img/rental_1.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-right" data-aos-delay="200">
-          <h2>                Героев Медиков 12
-          </h2>
+    <div class="half d-md-flex d-block">
+      <div class="image order-2" data-aos="fade" style="background-image: url('img/rent_11.jpg')"></div>
+      <div class="text" data-aos="fade-left" data-aos-delay="200">
 
-          <p>
-            <ul>
+        <p>
+          Мебель в квартире и техника,совершенно новые ,
+          Цены меняются в зависимости от времени года ,календарного дня и количество гостей
+        <ul>
 
-              <li>
-                Со стоянкой в центре города
+          <li>
+            Ортопедические матрасы для волшебного сна
+          </li>
+          <li>
+            1-на двуспальная кровать
+          </li>
+          <li>
+            2-е односпальные кровати
+          </li>
+          <li>
+            Один двуспальный диван
+          </li>
+          <li>
+            Один односпальный диван
+          </li>
+          <li>
+            Снимать от Квартира с wi-fi
 
-              </li>
-              <li>
-                Все удобства есть
+          </li>
+          <li>
+            телевизор
 
-              </li>
-              <li>
-                Wi Fi имеется
+          </li>
+        </ul>
+        </p>
 
-              </li>
-              <li>
-                1 этаж
-
-              </li>
-              <li>
-                3 тыс. Рублей
-
-              </li>              
-              <li>
-                Снимать от двух дней
-
-              </li>
-              <li>
-                Шаговая доступность магазинов , аптек и центрального рынка
-
-              </li>
-            </ul>
-          </p>
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать авто </a>
+        </p>
       </div>
+    </div>
+    <div class="half d-md-flex d-block">
+      <div class="image" data-aos="fade" style="background-image: url('img/rent_13.jpg')"></div>
+      <div class="text" data-aos="fade-right" data-aos-delay="200">
 
-      <div class="half d-md-flex d-block">
-        <div
-          class="image order-2"
-          data-aos="fade"
-          style="background-image: url('img/rental_1.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-left" data-aos-delay="200">
+        <p>
+          Для любителей готовить,есть необходимые кухонные принадлежности ,так же постельные принадлежности ,все
+          подобранно и создано для комфортного проживания.Вид с балкона и комнат на центер города курорта Кисловодск ,
+          В квартире все комнаты с солнечной стороны,
+        </p>
 
-          <p>
-            <ul>
 
-              <li>
-                Со стоянкой в центре города
-
-              </li>
-              <li>
-                Все удобства есть
-
-              </li>
-              <li>
-                Wi Fi имеется
-
-              </li>
-              <li>
-                1 этаж
-
-              </li>
-              <li>
-                3 тыс. Рублей
-
-              </li>              
-              <li>
-                Снимать от двух дней
-
-              </li>
-              <li>
-                Шаговая доступность магазинов , аптек и центрального рынка
-
-              </li>
-            </ul>
-          </p>
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать квартиру</a>
+        </p>
       </div>
-      <div class="half d-md-flex d-block">
-        <div
-          class="image"
-          data-aos="fade"
-          style="background-image: url('img/rental_1.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-right" data-aos-delay="200">
+    </div>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-            aliquid, est reiciendis repellat sapiente consequatur aperiam,
-            ducimus, id minima eligendi officiis, qui expedita sint culpa illum
-            magnam ipsam adipisci possimus? Sit aspernatur eaque id sunt fuga
-            facere hic laudantium, aperiam!
-          </p>
+    <div class="half d-md-flex d-block">
+      <div class="image order-2" data-aos="fade" style="background-image: url('img/rent_14.jpg')"></div>
+      <div class="text" data-aos="fade-left" data-aos-delay="200">
 
+        <p data-aos="fade-up" data-aos-delay="100">
+          Выезд в 12.00, заселение в 14.00.
+          В праздничные дни уточняйте цену.
+          Мы всегда рады нашим гостям ,хорошего отдыха .
+        </p>
+        <p>
+          От 6000 сутки 4 человек и меньше +1000 за гостя до 7 спальных мест
+        </p>
 
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать квартиру</a>
+        </p>
       </div>
-
-      <div class="half d-md-flex d-block">
-        <div
-          class="image order-2"
-          data-aos="fade"
-          style="background-image: url('img/rental_1.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-left" data-aos-delay="200">
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-            aliquid, est reiciendis repellat sapiente consequatur aperiam,
-            ducimus, id minima eligendi officiis, qui expedita sint culpa illum
-            magnam ipsam adipisci possimus? Sit aspernatur eaque id sunt fuga
-            facere hic laudantium, aperiam!
-          </p>
-
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>      
-    </section>
-    <!-- END section -->
-
-    <section class="section slider-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div
-              class="home-slider major-caousel owl-carousel mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="slider-item">
-                <img
-                  src="img/slider-1.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/slider-2.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/slider-3.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/slider-4.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/slider-5.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/slider-6.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
+    </div>
+  </section>
+  <!-- END section -->
+  <section class="section slider-section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="slider-item">
+              <img src="img/rent_1_1.jpg" alt="Image placeholder" class="img-fluid" />
             </div>
-            <!-- END slider -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-    <section class="bg-light">
-      <div class="half d-md-flex d-block">
-        <div
-          class="image"
-          data-aos="fade"
-          style="background-image: url('img/rent_10.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-right" data-aos-delay="200">
-          <h2>                Центр Города
-          </h2>
-
-          <p>
-            Доброго дня ,уважаемые гости ,мы предлагаем  Квартиру в самом центре города , трех комнатная  , с новым ремонтом,находится в 1-ой парковой зоне в самом центре города курорта Кисловодск. Сдается от 3 суток ,
-            вместительность  до 7 -ми гостей ,
-          </p>
-          <p>
-            Возле нашего дома имеется пекарня ,каждый день горячая выпечка ,рядом продуктовые магазины ,до центрального городского рынка 5 минут,до поющего фонтана в центре парка идти всего лишь 3 минуты.
-          </p>
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="half d-md-flex d-block">
-        <div
-          class="image order-2"
-          data-aos="fade"
-          style="background-image: url('img/rent_11.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-left" data-aos-delay="200">
-
-          <p>
-            Мебель в квартире и техника,совершенно новые ,
-Цены меняются в зависимости от времени года ,календарного дня и количество гостей 
-            <ul>
-
-              <li>
-                Ортопедические матрасы для волшебного сна
-              </li>
-              <li>
-                1-на двуспальная кровать
-              </li>
-              <li>
-                2-е односпальные кровати
-              </li>
-              <li>
-                Один двуспальный диван
-              </li>
-              <li>
-                Один односпальный диван 
-              </li>              
-              <li>
-                Снимать от Квартира с wi-fi 
-
-              </li>
-              <li>
-                телевизор
-
-              </li>
-            </ul>
-          </p>
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="half d-md-flex d-block">
-        <div
-          class="image"
-          data-aos="fade"
-          style="background-image: url('img/rent_13.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-right" data-aos-delay="200">
-
-          <p>
-            Для любителей готовить,есть  необходимые кухонные принадлежности ,так же постельные принадлежности ,все подобранно и создано для комфортного проживания.Вид с балкона и комнат  на  центер города  курорта Кисловодск ,
-            В квартире все комнаты с солнечной  стороны,
-          </p>
-
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="half d-md-flex d-block">
-        <div
-          class="image order-2"
-          data-aos="fade"
-          style="background-image: url('img/rent_14.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-left" data-aos-delay="200">
-
-          <p data-aos="fade-up" data-aos-delay="100">
-            Выезд в 12.00, заселение в 14.00.
-            В праздничные дни уточняйте цену. 
-            Мы всегда  рады нашим гостям ,хорошего отдыха .
-          </p>
-          <p>
-            От 6000 сутки 4 человек и меньше +1000 за гостя до 7 спальных мест
-          </p>
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>      
-    </section>
-    <!-- END section -->
-    <section class="section slider-section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div
-              class="home-slider major-caousel owl-carousel mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="slider-item">
-                <img
-                  src="img/rent_1_1.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_1_2.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_1_3.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_1_4.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_1_5.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_1_6.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
+            <div class="slider-item">
+              <img src="img/rent_1_2.jpg" alt="Image placeholder" class="img-fluid" />
             </div>
-            <!-- END slider -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-    <section class="bg-light">
-      <div class="half d-md-flex d-block">
-        <div
-          class="image"
-          data-aos="fade"
-          style="background-image: url('img/rent_20.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-right" data-aos-delay="200">
-          <h2>                
-            Берёзовское ущелье
-          </h2>
-
-          <p>
-            Для дорогих гостей г. Кисловодска предлагаем отдых в котеджах под названием Берёзовое ущелье, находящиеся в шаговой доступности от 15-17 минут до Коллонады
-             от 20-25 минут до центра города. 
-             Размещение в коттеджах по 80 кв. м. 
-             Имеются три комнаты кухня ванная, все пренадлежности для комфортного отдыха. 
-
-          </p>
-          <p>
-            На территории котеджей четыре мангальные зоны отдыха, имеется парковка на шесть автомобилей,
-            по желанию клиента можем предоставить передвижные бани у водоёма реки Берёзовка. 
-            Вместимость котеджей до 10 человек, цена за четверых человек 2500,свыше четырёх по 600 рублей с человека.
-          </p>
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="half d-md-flex d-block">
-        <div
-          class="image order-2"
-          data-aos="fade"
-          style="background-image: url('img/rent_21.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-left" data-aos-delay="200">
-
-          <p>
-            Мебель в квартире и техника,совершенно новые ,
-Цены меняются в зависимости от времени года ,календарного дня и количество гостей 
-            <ul>
-
-              <li>
-                Ортопедические матрасы для волшебного сна
-              </li>
-              <li>
-                1-на двуспальная кровать
-              </li>
-              <li>
-                2-е односпальные кровати
-              </li>
-              <li>
-                Один двуспальный диван
-              </li>
-              <li>
-                Один односпальный диван 
-              </li>              
-              <li>
-                Снимать от Квартира с wi-fi 
-
-              </li>
-              <li>
-                телевизор
-
-              </li>
-            </ul>
-          </p>
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="half d-md-flex d-block">
-        <div
-          class="image"
-          data-aos="fade"
-          style="background-image: url('img/rent_22.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-right" data-aos-delay="200">
-
-          <p>
-            Для любителей готовить,есть  необходимые кухонные принадлежности ,так же постельные принадлежности ,все подобранно и создано для комфортного проживания.Вид с балкона и комнат  на  центер города  курорта Кисловодск ,
-            В квартире все комнаты с солнечной  стороны,
-          </p>
-
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="half d-md-flex d-block">
-        <div
-          class="image order-2"
-          data-aos="fade"
-          style="background-image: url('img/rent_23.jpg')"
-        ></div>
-        <div class="text" data-aos="fade-left" data-aos-delay="200">
-
-          <p data-aos="fade-up" data-aos-delay="100">
-            Выезд в 12.00, заселение в 14.00.
-            В праздничные дни уточняйте цену. 
-            Мы всегда  рады нашим гостям ,хорошего отдыха .
-          </p>
-          <p>
-            От 6000 сутки 4 человек и меньше +1000 за гостя до 7 спальных мест
-          </p>
-
-          <p class="mt-5">
-            <a href="#" class="lead btn btn-primary uppercase"
-              >Забронировать квартиру</a
-            >
-          </p>
-        </div>
-      </div>      
-    </section>
-    <!-- END section -->
-    <section class="section slider-section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div
-              class="home-slider major-caousel owl-carousel mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="slider-item">
-                <img
-                  src="img/rent_2_1.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_2_2.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_2_3.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_2_4.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_2_5.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="slider-item">
-                <img
-                  src="img/rent_2_6.jpg"
-                  alt="Image placeholder"
-                  class="img-fluid"
-                />
-              </div>
+            <div class="slider-item">
+              <img src="img/rent_1_3.jpg" alt="Image placeholder" class="img-fluid" />
             </div>
-            <!-- END slider -->
+            <div class="slider-item">
+              <img src="img/rent_1_4.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_1_5.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_1_6.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
           </div>
+          <!-- END slider -->
         </div>
       </div>
-    </section>
-    <!-- END section -->
-      <section class="section blog-post-entry bg-pattern">
+    </div>
+  </section>
+  <!-- END section -->
+  <section class="bg-light">
+    <div class="half d-md-flex d-block">
+      <div class="image" data-aos="fade" style="background-image: url('img/rent_20.jpg')"></div>
+      <div class="text" data-aos="fade-right" data-aos-delay="200">
+        <h2>
+          Берёзовское ущелье
+        </h2>
+
+        <p>
+          Для дорогих гостей г. Кисловодска предлагаем отдых в котеджах под названием Берёзовое ущелье, находящиеся в
+          шаговой доступности от 15-17 минут до Коллонады
+          от 20-25 минут до центра города.
+          Размещение в коттеджах по 80 кв. м.
+          Имеются три комнаты кухня ванная, все пренадлежности для комфортного отдыха.
+
+        </p>
+        <p>
+          На территории котеджей четыре мангальные зоны отдыха, имеется парковка на шесть автомобилей,
+          по желанию клиента можем предоставить передвижные бани у водоёма реки Берёзовка.
+          Вместимость котеджей до 10 человек, цена за четверых человек 2500,свыше четырёх по 600 рублей с человека.
+        </p>
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать квартиру</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="half d-md-flex d-block">
+      <div class="image order-2" data-aos="fade" style="background-image: url('img/rent_21.jpg')"></div>
+      <div class="text" data-aos="fade-left" data-aos-delay="200">
+
+        <p>
+          Мебель в квартире и техника,совершенно новые ,
+          Цены меняются в зависимости от времени года ,календарного дня и количество гостей
+        <ul>
+
+          <li>
+            Ортопедические матрасы для волшебного сна
+          </li>
+          <li>
+            1-на двуспальная кровать
+          </li>
+          <li>
+            2-е односпальные кровати
+          </li>
+          <li>
+            Один двуспальный диван
+          </li>
+          <li>
+            Один односпальный диван
+          </li>
+          <li>
+            Снимать от Квартира с wi-fi
+
+          </li>
+          <li>
+            телевизор
+
+          </li>
+        </ul>
+        </p>
+
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать квартиру</a>
+        </p>
+      </div>
+    </div>
+    <div class="half d-md-flex d-block">
+      <div class="image" data-aos="fade" style="background-image: url('img/rent_22.jpg')"></div>
+      <div class="text" data-aos="fade-right" data-aos-delay="200">
+
+        <p>
+          Для любителей готовить,есть необходимые кухонные принадлежности ,так же постельные принадлежности ,все
+          подобранно и создано для комфортного проживания.Вид с балкона и комнат на центер города курорта Кисловодск ,
+          В квартире все комнаты с солнечной стороны,
+        </p>
+
+
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать квартиру</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="half d-md-flex d-block">
+      <div class="image order-2" data-aos="fade" style="background-image: url('img/rent_23.jpg')"></div>
+      <div class="text" data-aos="fade-left" data-aos-delay="200">
+
+        <p data-aos="fade-up" data-aos-delay="100">
+          Выезд в 12.00, заселение в 14.00.
+          В праздничные дни уточняйте цену.
+          Мы всегда рады нашим гостям ,хорошего отдыха .
+        </p>
+        <p>
+          От 6000 сутки 4 человек и меньше +1000 за гостя до 7 спальных мест
+        </p>
+
+        <p class="mt-5">
+          <a href="#" class="lead btn btn-primary uppercase">Забронировать квартиру</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+  <section class="section slider-section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="slider-item">
+              <img src="img/rent_2_1.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_2_2.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_2_3.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_2_4.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_2_5.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="slider-item">
+              <img src="img/rent_2_6.jpg" alt="Image placeholder" class="img-fluid" />
+            </div>
+          </div>
+          <!-- END slider -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+  <section class="section blog-post-entry bg-pattern">
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
         <div class="col-md-8">
           <h2 class="heading" data-aos="fade-up">Туры под ключ</h2>
-          <p class="" data-aos="fade-up">Путешествия всё включенно - это падарок для отдыхающего и отработанная, как часы, схема для нас. Всё включено!</p>
+          <p class="" data-aos="fade-up">Путешествия всё включенно - это падарок для отдыхающего и отработанная, как
+            часы, схема для нас. Всё включено!</p>
         </div>
       </div>
       <div class="row">
@@ -724,127 +534,121 @@
       </div>
     </div>
   </section>
-    <footer class="section footer-section">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="/about.html">О нас</a></li>
-              <li><a href="#">Правила пользования</a></li>
-              <li><a href="#">Конфиденциально</a></li>
-              <li><a href="#">Помощь</a></li>
-              <li><a href="auto.html">Автопарк</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="/baths.html">Бани</a></li>
-              <li><a href="/hotel.html">Жильё</a></li>
-              <li><a href="/about.html">О нас</a></li>
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">Заведения</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <p>
-              <span class="d-block">Адрес:</span>
-              <span> Чайковского 26а Кисловодск</span>
-            </p>
-            <p>
-              <span class="d-block">Звоните:</span>
-              <span> +7 (938) 300-09-06</span>
-            </p>
-            <p>
-              <span class="d-block">Email:</span>
-              <span> Markod009@mail.ru</span>
-            </p>
-          </div>
-          <div class="col-md-3 mb-5">
-            <p>Бесплатная подписка</p>
-            <form action="#" class="footer-newsletter">
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Ваша контакт..."
-                />
-                <button type="submit" class="btn">
-                  <span class="fa fa-paper-plane"></span>
-                </button>
-              </div>
-            </form>
-          </div>
+  <footer class="section footer-section">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3 mb-5">
+          <ul class="list-unstyled link">
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="#">Правила пользования</a></li>
+            <li><a href="#">Конфиденциально</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="auto.html">Автопарк</a></li>
+          </ul>
         </div>
-        <div class="row bordertop pt-5">
-          <p class="col-md-6 text-left">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Права защищены | Сделано 
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <div class="col-md-3 mb-5">
+          <ul class="list-unstyled link">
+            <li><a href="/baths.html">Бани</a></li>
+            <li><a href="/hotel.html">Жильё</a></li>
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Заведения</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5 pr-md-5 contact-info">
+          <p>
+            <span class="d-block">Адрес:</span>
+            <span> Чайковского 26а Кисловодск</span>
           </p>
-
-          <p class="col-md-6 text-right social">
-            <a href="#"><span class="fa fa-tripadvisor"></span></a>
-            <a href="#"><span class="fa fa-facebook"></span></a>
-            <a href="#"><span class="fa fa-twitter"></span></a>
+          <p>
+            <span class="d-block">Звоните:</span>
+            <span> +7 (938) 300-09-06</span>
           </p>
+          <p>
+            <span class="d-block">Email:</span>
+            <span> Markod009@mail.ru</span>
+          </p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <p>Бесплатная подписка</p>
+          <form action="#" class="footer-newsletter">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Ваша контакт..." />
+              <button type="submit" class="btn">
+                <span class="fa fa-paper-plane"></span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
+      <div class="row bordertop pt-5">
+        <p class="col-md-6 text-left">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Права защищены | Сделано
+          <i class="fa fa-heart-o" aria-hidden="true"></i> by
+          <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
+        <p class="col-md-6 text-right social">
+          <a href="#"><span class="fa fa-tripadvisor"></span></a>
+          <a href="#"><span class="fa fa-facebook"></span></a>
+          <a href="#"><span class="fa fa-twitter"></span></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
         }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+      }
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(
+      window,
+      document,
+      "script",
+      "https://mc.yandex.ru/metrika/tag.js",
+      "ym"
+    );
 
-      ym(93959288, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/93959288"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-  </body>
+    ym(93959288, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/93959288" style="position: absolute; left: -9999px" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+
 </html>
